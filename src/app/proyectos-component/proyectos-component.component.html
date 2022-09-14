@@ -1,0 +1,28 @@
+<div class="container-fluid !direction !spacing">
+  <p>proyectos-component works!</p>
+
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-3">
+      <label for="validationCustom01" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" [(ngModel)]="cuadroNombre" required>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom02" class="form-label">Apelido</label>
+      <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" [(ngModel)]="cuadroApellido" required>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom02" class="form-label">Cargo</label>
+      <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Cargo" [(ngModel)]="cuadroCargo" required>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom03" class="form-label">Salario</label>
+      <input type="number" class="form-control" id="salario" name="salario" placeholder="Salario" [(ngModel)]="cuadroSalario" required>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit" (click)="agregarEmpleado()">Registrar</button>
+    </div>
+  </form>
+
+  <!--<a class="btn btn-primary btn-sm " role="button" (click)="volverhome()"> Volver Home</a> -->
+
+</div>
